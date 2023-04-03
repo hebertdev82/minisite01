@@ -4,63 +4,40 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Minisite 01</title>
+        <title>Rixxer - Modelo Hamburgueria</title>
         <meta name="description" content="Rixxer" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+      <main className='flex flex-col items-center'>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+        <section className='flex top-bar'>
+          <span>Aproveite nossa promoção da semana: Combo de 2 hamburgueres, entrega grátis!</span>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+        </section>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+        <section className='logo py-8'>
+          <Image src="/seu-logo-aqui.png" alt="Seu Logo Aqui" width="0" height="0" sizes="100vw" className="w-40 h-auto"/>
+        </section>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+        <section className='hamburguer'>
+          <Image src="/hamburguer.png" alt="Hamburguer" width={800} height={306} />
+        </section>
+        
+        
       </main>
 
-      <footer className={styles.footer}>
+      <footer className='flex flex-col items-center fixed bottom-0'>
         <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          href="https://rixxer.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
         >
           Powered by{' '}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            <Image src="/rixxer-white.png" alt="Rixxer" width={72} height={16} />
           </span>
         </a>
       </footer>
